@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="content">
+<input type="button" id="btn">
+<script>
+    var ws = new WebSocket("ws://localhost:2333");
+    //连接时调用
+    ws.onopen = function () {
+        ws.send('来自客户端的信息');
+    }
+    //接收服务端的消息
+    ws.onmessage = function (e) {
+        console.log(e.data);
+    }
+    document.getElementById('btn').onclick = function () {
+
+    }
+</script>
+</body>
+</html>
