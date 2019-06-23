@@ -1,8 +1,8 @@
 # -*- coding:utf-8 -*-
-import pandas
+import pandas_study
 
 
-food_info = pandas.read_csv('food_info.csv')
+food_info = pandas_study.read_csv('food_info.csv')
 # print(type(food_info))
 # print(food_info.dtypes)
 # print(help(pandas.read_csv))
@@ -34,7 +34,7 @@ food_info = pandas.read_csv('food_info.csv')
 # food_info.sort_values('Sodium_(mg)', inplace=True, ascending=False)
 # print(food_info['Sodium_(mg)'][1])
 
-import pandas as pd
+import pandas_study as pd
 import numpy as np
 titanic_survival = pd.read_csv('titanic_train.csv')
 # print(titanic_survival.head())
