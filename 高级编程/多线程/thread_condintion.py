@@ -6,7 +6,7 @@ import threading
 # 通过condition完成读诗
 class Xiaoai(threading.Thread):
     def __init__(self, cond):
-        super().__init__(name="小爱")
+        super(Xiaoai, self).__init__(name="小爱")
         self.cond = cond
 
 
@@ -37,7 +37,7 @@ class Xiaoai(threading.Thread):
 
 class Tianmao(threading.Thread):
     def __init__(self, cond):
-        super().__init__(name="天猫")
+        super(Tianmao, self).__init__(name="天猫")
         self.cond = cond
 
     def run(self):
